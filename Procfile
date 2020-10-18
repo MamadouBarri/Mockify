@@ -1,1 +1,1 @@
-web:gunicorn mockify.wsgi
+web: gunicorn mockify.wsgi

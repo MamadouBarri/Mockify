@@ -1,2 +1,1 @@
-# Mockify
 Mockify API
