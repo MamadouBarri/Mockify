@@ -4,7 +4,7 @@
 
 <p align="center">
 
-  <h3 align="center"> :zap: [Mockify] (https://mockify-api.herokuapp.com/) :zap:</h3>
+  <h3 align="center"> :zap: Mockify https://mockify-api.herokuapp.com/ :zap:</h3>
 <h5 align="center">By Barri</h5>
   <p align="center">
     Easy-to-use Mock REST API that let's any developer accelerate their initial development process.
