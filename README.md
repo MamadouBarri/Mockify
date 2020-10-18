@@ -105,7 +105,7 @@ Content-Type: application/json
 
 After this request, the server returns a json file containing a list of 100 mock objects with random data:
 
-![alt text](https://github.com/MamadouBarri/Mockify/blob/master/readme_assets/random_data_ex.PNG?raw=true)
+![alt text](https://github.com/MamadouBarri/Mockify/blob/master/readme_assets/rsz_1random_data_ex.png?raw=true)
 
 Here are the steps to take when creating a schema object:
 
@@ -173,7 +173,7 @@ python manage.py runserver
 
 ## Contributing
 
-Feel free to contribute the this project! I'm always open to new suggestions and ideas. Any contributions you make are **greatly appreciated**. :smile:
+Feel free to contribute to this project! I'm always open to new suggestions and ideas. Any contributions you make are **greatly appreciated**. :smile:
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -183,14 +183,11 @@ Feel free to contribute the this project! I'm always open to new suggestions and
 
 
 
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
 
+Distributed under the MIT License.
 
-
-<!-- CONTACT -->
 ## Contact
 
 Barri, Mamadou - mgbarri@icloud.com
