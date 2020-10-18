@@ -67,3 +67,13 @@ class Mockify(APIView):
                 data=schema_serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+    def get(self, request):
+        """
+        Tell client to use POST 
+        method instead
+        """
+        return Response(
+            data="Please use POST HTTP method instead",
+            status=status.HTTP_400_BAD_REQUEST
+        )

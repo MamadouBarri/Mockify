@@ -1,20 +1,24 @@
+
+{% load static %}
+
 <!DOCTYPE html>
 <html  >
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/icon-121x121.png" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static "images/icon-121x121.png" %}" type="image/x-icon">
   
   <title>Mockify</title>
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="{% static "tether/tether.min.css" %}">
+  <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap-grid.min.css" %}">
+  <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap-reboot.min.css" %}">
+  <link rel="stylesheet" href="{% static "dropdown/css/style.css" %}">
+  <link rel="stylesheet" href="{% static "socicon/css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "theme/css/style.css" %}">
+  <link rel="preload" as="style" href="{% static "mobirise/css/mbr-additional.css" %}">
+  <link rel="stylesheet" href="{% static "mobirise/css/mbr-additional.css" type="text/css" %}">
   
   
 </head>
@@ -27,7 +31,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="https://github.com/MamadouBarri/Mockify">
-                        <img src="assets/images/icon-121x121.png" style="height: 4.6rem;">
+                        <img src="{% static "images/icon-121x121.png" %}" style="height: 4.6rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="https://github.com/MamadouBarri/Mockify">Mock your API</a></span>
@@ -41,7 +45,7 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-4 image-wrapper">
-                <img src="assets/images/rounded-random-data-695x897.png">
+                <img src="{% static "images/rounded-random-data-695x897.png" %}">
             </div>
             <div class="col-12 col-md">
                 <div class="text-wrapper">
