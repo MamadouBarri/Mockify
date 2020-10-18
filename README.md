@@ -183,14 +183,11 @@ Feel free to contribute to this project! I'm always open to new suggestions and 
 
 
 
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
 
+Distributed under the MIT License.
 
-
-<!-- CONTACT -->
 ## Contact
 
 Barri, Mamadou - mgbarri@icloud.com
