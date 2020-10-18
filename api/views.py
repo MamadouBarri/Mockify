@@ -1,6 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.response import Response
+from django.shortcuts import render
 from .serializers import SchemaSerializer
 from .utils import (
     dynamic_random_data,
@@ -9,6 +10,12 @@ from .utils import (
     verbose_to_enum, create_kwargs,
     needs_nested_range,
 )
+
+# Main page
+
+
+def main_page_view(request):
+    return render(request, 'static/index.html', {})
 
 
 class Mockify(APIView):

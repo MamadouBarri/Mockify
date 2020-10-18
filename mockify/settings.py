@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7yg9ic&8=bhwer1i#k^p)z#npe9h397%km9k9@ln8$hgybmp3p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'mockify-api.herokuapp.com']
 
@@ -58,7 +58,9 @@ ROOT_URLCONF = 'mockify.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            ''
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
