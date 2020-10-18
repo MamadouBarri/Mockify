@@ -173,7 +173,7 @@ python manage.py runserver
 
 ## Contributing
 
-Feel free to contribute the this project! I'm always open to new suggestions and ideas. Any contributions you make are **greatly appreciated**. :smile:
+Feel free to contribute to this project! I'm always open to new suggestions and ideas. Any contributions you make are **greatly appreciated**. :smile:
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
