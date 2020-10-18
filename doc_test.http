@@ -30,3 +30,36 @@ Content-Type: application/json
     "boolean_value": "my_boolean",
     "unique_identifier": "my_uid"
 }
+
+### Local Testing
+POST http://127.0.0.1:8000/api/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "count": 100,
+    "city": "my_city",
+    "country_code": "my_country_code",
+    "country_name": "my_country_name",
+    "currency": "my_currency",
+    "email": "my_email",
+    "first_name": "my_first_name",
+    "last_name": "my_last_name",
+    "phone": "my_phone",
+    "state": "my_state",
+    "street_address": "my_street_address",
+    "zip_code": "my_zip",
+    "integer_number": {
+        "range": "1,2",
+        "name": "my_integer_number"
+    },
+    "float_number": {
+        "range": "1,2.5",
+        "name": "my_float_name"
+    },
+    "list_choice": {
+        "range": "asdf, asdf, adf",
+        "name": "my_list_choice"
+    },
+    "boolean_value": "my_boolean",
+    "unique_identifier": "my_uid"
+}
