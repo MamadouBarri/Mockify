@@ -24,8 +24,8 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Usage](#usage)
-  * [Installation](#installation)
+  * [API Usage](#usage)
+  * [Local Installation](#local-installation)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -52,6 +52,7 @@ Of course, not all types of data can be mocked with Mockify as of now, but feel 
 These are the main technologies used to build and deploy this project:
 * [Python 3.8.5](https://www.python.org/)
 * [Django](https://www.djangoproject.com/)
+* [RESTFramework](https://www.django-rest-framework.org/)
 * [SQLite](https://www.sqlite.org/index.html)
 * [Heroku](https://www.heroku.com/)
 
@@ -68,7 +69,7 @@ For a more exhaustive list, feel free to check out the [requirements.txt](https:
 
 Here is a simple POST request to [https://mockify-api.herokuapp.com/api/](https://mockify-api.herokuapp.com/api/) with a json schema.
 
-```
+```json
 POST https://mockify-api.herokuapp.com/api/ HTTP/1.1
 Content-Type: application/json
 
@@ -108,44 +109,71 @@ After this request, the server returns a json file containing a list of 100 mock
 
 Here are the steps to take when creating a schema object:
 
-*
-*
-*
+* Choose the number of objects to generate (max 100) and set the *count* attribute in your json
+* For *city*, *country_code*, *country_name*, *currency*, *email*, *first_name*, *last_name*, *phone*, *state*, *street_address*, *zip_code*, *boolean_value* and *unique_identifier* you only need to specify the name of the attribute for a specific type of data. In our example, we wanted the server to return objects that have *my_country_code* as their attribute with *country_code* as their type. Therefore we inserted this attribute-value pair in our json:
+```json
+"country_code": "my_country_code"
+```
+* For more complex data types, we also need to specify complementary information such as a range or an enumeration of values. The *name* of the variable should be in the name *attribute* and the additional information in the *range* attribute:
 
-### Installation
+```json
+"list_choice": {
+        "range": "asdf, asdf, adf",
+        "name": "my_list_choice"
+    }
+```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Here is an exhaustive list of types that Mockify supports as of now:
+* city : Random city from anywhere in the world. ~114k records
+* country_code : Random country code (alpha-2). ~230 records
+* country_name : Random country name. ~230 records
+* currency : Random currency ISO4217. ~140 records
+* email : Random email. ~40k records
+* first_name : Random first name. ~5k records
+* last_name : Random last name. ~150k records
+* phone : Random phone number. ~30k records
+* state : Random states throughout the world. ~1k records
+* street_address : Random US street address. ~1k records
+* zip_code : Random US postal code. ~1k records
+* integer_number : Random integer number within the specified range.
+* float_number : Random decimal point number within the specified range.
+* list_choice : Random choice from the specified comma-separated list.
+* boolean_value : Random boolean value
+* unique_identifier : Random unique identifier.
+
+
+### Local Installation
+
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/MamadouBarri/Mockify.git
 ```
-3. Install NPM packages
+2. Create a virtual environment in the cloned directory
 ```sh
-npm install
+python -m venv .
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+3. Activate virtual environment
+```sh
+# cmd
+C:\> <venv>\Scripts\activate.bat
+```
+```sh
+# bash/zsh
+$ source <venv>/bin/activate
+```
+4. Install the requirements
+```sh
+pip install -r requirements.txt
+```
+5. Start the server
+```sh
+python manage.py runserver
 ```
 
 
-
-
-
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Feel free to contribute the this project! I'm always open to new suggestions and ideas. Any contributions you make are **greatly appreciated**. :smile:
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -165,24 +193,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Barri, Mamadou - mgbarri@icloud.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/MamadouBarri/Mockify](https://github.com/MamadouBarri/Mockify)
 
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
 
