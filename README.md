@@ -5,7 +5,7 @@
 <p align="center">
 
   <h3 align="center"> :zap: Mockify :zap:</h3>
-  <h4 align="center"> :zap: https://mockify-api.herokuapp.com/  :zap:</h4>
+  <h4 align="center"> https://mockify-api.herokuapp.com/ </h4>
   
 <h5 align="center">By Barri</h5>
   <p align="center">
