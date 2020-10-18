@@ -1,6 +1,7 @@
 # Custom
 mock_data/
-
+.vscode/
+Scripts/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
