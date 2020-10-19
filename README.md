@@ -46,6 +46,8 @@ Here's why:
 * You shouldn't be doing the same tasks over and over (DRY!)  :expressionless:
 * It's easy! :white_check_mark:
 
+![alt text](https://github.com/MamadouBarri/Mockify/blob/master/readme_assets/ui_image.PNG?raw=True)
+
 Of course, not all types of data can be mocked with Mockify as of now, but feel free to <a href="https://github.com/MamadouBarri/Mockify/issues">request a feature </a> or even contribute to this project!
 
 
